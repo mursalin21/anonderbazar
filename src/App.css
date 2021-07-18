@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+body, html, #root, .app {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-container{
+  /* min-width: 63.125%;
+  max-height: 100%; */
+  
+  height: 100vh;
+  width: 80%;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container #logo-background{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  filter: brightness(60%);
+  margin: 0;
+}
+
+/* .title-logo{
+  position: relative;
+  top: 0;
+  left: 0;
+} */
+
+.logo-container #anonder-name{
+  position: absolute;
+  width: 20em;
+  top: 244px;
+  left:146px;
+}
+.logo-container #anonder-logo{
+  position: absolute;
+  width: 5em;
+  top: 247px;
+  left: 480px;
+}
+.logo-container #did-you-text{
+  position: absolute;
+  width: 35em;
+  top: 325px;
+  left: 144px;
+}
+
+
+
+.logo-container #icon1{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 144px;
+}
+.logo-container #icon2{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 215px;
+}
+.logo-container #icon3{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 286px;
+}
+.logo-container #icon4{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 357px;
+}
+.logo-container #icon5{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 428px;
+}
+.logo-container #icon6{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 499px;
+}
+.logo-container #icon7{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 570px;
+}
+.logo-container #icon8{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 641px;
+}
+.logo-container #icon9{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 712px;
+}
+.logo-container #icon10{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 783px;
+}
+.logo-container #icon11{
+  position: absolute;
+  width: 3.5em;
+  top: 520px;
+  left: 854px;
+}
+
+
+.login-container {
+  
+  font-size: 28px;
+  color: #fff;
+  height: 100%;
+  width: 36.875%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.login-form-title{
+  display: flex;
+  flex-direction: column;
+}
+.forgot-remember-password{
+  margin-bottom: 0;
+}
+#getting-started-description{
+  position: absolute;
+  top: 140px;
+  right: 140px;
+  width: 12em;
+}
+#getting-started{
+  position: relative;
+  width: 9em;
+  top: -65px;
 }
 
-.App-link {
-  color: #61dafb;
+.loginForm #user-icon{
+  position: absolute;
+  top: 386px;
+  right: 450px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginForm #pass-icon{
+  position: absolute;
+  top: 443px;
+  right: 450px;
+}
+
+
+#remember-checkbox{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+/* .loginForm {
+ box-sizing: border-box;
+ width: 100%;
+ max-width: 400px;
+ padding-left: 200px;
+} */
+
+/* .inputField {
+ padding-top: 16px;
+}
+*/
+
+.forgot-remember-password #remember-pass{
+  color: black;
+  font-size: 14px;
+}
+
+.input {
+ box-sizing: border-box;
+ outline: none;
+ border: solid 2px white;
+ /* border-radius: 4px; */
+ color: #292929;
+ width: 100%;
+ padding: 12px;
+ padding-bottom: 0;
+ margin-bottom: 0;
+ margin-left: 20px;
+ font-size: 14px;
+ background: rgba(255, 255, 255, 1);
+}
+hr{
+  margin-top: 3px;
+}
+.submitButton {
+ padding-top: 16px;
+} 
+
+#remember-pass{
+  margin-left: 12px;
+}
+
+.btn {
+ width: 101%;
+ min-width: 280px;
+ color: white;
+ padding: 12px;
+ font-size: 14px;
+ font-weight: bold;
+ border-radius: 4px;
+ border: 0;
+ background: #E62D26;
+ cursor: pointer;
+ box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+
+}
+.forgot-pass{
+  border: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin-right: 79px;
 }
